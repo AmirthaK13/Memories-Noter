@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <h1>Memories Noter📝</h1>
+    </div>
+    <div class="firstcontainer">
+        <div class="book">
+            <h2>Title:First day in college</h2>
+            <h6>Date:13/06/2020</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur vitae corporis quaerat perspiciatis delectus dicta reprehenderit dolorum ducimus impedit cumque ab cum voluptates, adipisci nostrum ut molestias totam libero. Assumenda.</p>
+            <button onclick="deleteitem(event)">🗑️</button>
+            <button onclick="edititem(event)" id="edit">✏️</button>
+        </div>
+    </div>
+    <div class="overlay">
+</div>
+    <div class="popup">
+        <h2>Add Title</h2>
+        <form>
+            <input type="text" placeholder="Title" id="title">
+            
+            <input type="date" placeholder="Date" id="date">
+
+            <textarea placeholder=" Text" id="text"></textarea>
+            
+            <button id="save"> Save 📂</button>
+            <button id="cancel">Cancel 🚫</button>
+
+        </form>
+    </div>
+    <button class="button-add" id="add-btn">+</button>
+    <script src="script.js"></script>
+</body>
+</html>
